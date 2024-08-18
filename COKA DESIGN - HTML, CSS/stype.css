@@ -1,0 +1,215 @@
+:root{
+    --white: white;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none ;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 7rem 10rem;
+}
+
+nav{
+    grid-column: 4/10;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menu li{
+    align-self: flex-end;
+    padding-bottom: 1rem;
+}
+
+.menu li a{
+    color: black;
+}
+
+.menu li a:hover{
+    color: antiquewhite;
+}
+
+.title{
+    grid-column: 5/9;
+    grid-row: 2/3;
+    justify-self: center;
+    padding-top: 20px;
+}
+
+.title h1 {
+    font-size: 3rem;
+}
+
+.title h1 span{
+    font-weight: 100;
+}
+
+.title h2{
+    font-weight: 100;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,auto);
+    padding-top: 3rem;
+}
+
+.imgbanner {
+    grid-row: 1/5;
+    grid-column: 3/8;
+}
+
+.imgbanner img{
+    width: 100%;
+}
+
+.infobanner{
+    grid-column: 8/11;
+    grid-row: 1/5;
+    background-color: rgb(145, 169, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.infosub{
+    font-size: 1.5rem;
+}
+
+.infosub h2{
+    color: white;
+    padding-left: 10%;
+    line-height: 0.9;
+}
+
+.infosub h2 span{
+    color: rgb(44, 41, 41);
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.listabanner{
+    position: relative;
+    left: 10%;
+    max-width: 70%;
+}
+
+.infobanner ul{
+    color: white;
+    list-style-type: none;
+    font-size: 0.8rem;
+}
+
+.btncont{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+
+.btninfo{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btninfo P {
+    font-size: 0.7rem;
+}
+
+.btninfo p span {
+    color: white;
+}
+
+.servicios{
+    padding:3rem 0 ;
+}
+
+
+
+
+
+
+.boxserv{
+    height: 20rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxserv h3{
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+
+.boxserv hr , .boxserv p {
+    width: 90%;
+}
+
+.btninfoserv{
+    width: 6rem;
+    height: 1.6rem;
+    background-color: gray ;
+    align-self: flex-end;
+    position: relative;
+    right: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btninfoserv a{
+    color: white;
+    font-size:0.7rem;
+}
+
+.b1 {
+background-color: aqua;
+grid-area:b1;
+}
+
+.b2 {
+background-color: aquamarine;
+grid-area:b2;
+}
+
+.b3 {
+background-color: violet;
+grid-area:b3;
+}
+
+.servcont{
+    display: grid;
+    grid-template-columns: repeat(3,15vw);
+    grid-template-areas:
+    "b1 b2 b3";
+    justify-content: center;
+    column-gap: 5%;
+}
